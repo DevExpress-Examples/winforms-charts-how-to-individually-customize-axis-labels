@@ -19,4 +19,4 @@ For this, handle the [CustomDrawAxisLabel](https://docs.devexpress.com/WindowsFo
 ## Documentation
 
 * [Chart Control - Axis Labels](https://docs.devexpress.com/WindowsForms/5804/controls-and-libraries/chart-control/axes/axis-labels)
-- [ChartControl.CustomDrawAxisLabel](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.CustomDrawAxisLabel)
+* [ChartControl.CustomDrawAxisLabel](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.CustomDrawAxisLabel)
