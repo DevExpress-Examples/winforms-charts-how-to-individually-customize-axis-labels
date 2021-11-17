@@ -9,7 +9,7 @@ Apart from the capability to customize the overall appearance of [axis labels](h
 
 For this, handle the [CustomDrawAxisLabel](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.CustomDrawAxisLabel) event to obtain axis labels.
 
-The following image shows the resulted Chart:
+The following image shows the resulting Chart:
 
 ![](img/customaxislabels_09789.png)
 
