@@ -1,17 +1,17 @@
-﻿Imports System
 Imports System.Drawing
 Imports System.Windows.Forms
 Imports DevExpress.XtraCharts
 
 Namespace CustomAxisLabels
-    Partial Public Class Form1
+
+    Public Partial Class Form1
         Inherits Form
 
         Public Sub New()
             InitializeComponent()
         End Sub
 
-        Private Sub chartControl1_CustomDrawAxisLabel(ByVal sender As Object, ByVal e As CustomDrawAxisLabelEventArgs) Handles chartControl1.CustomDrawAxisLabel
+        Private Sub chartControl1_CustomDrawAxisLabel(ByVal sender As Object, ByVal e As CustomDrawAxisLabelEventArgs)
             Dim axis As AxisBase = e.Item.Axis
             If TypeOf axis Is AxisY OrElse TypeOf axis Is AxisY3D OrElse TypeOf axis Is RadarAxisY Then
                 Dim axisValue As Double = CDbl(e.Item.AxisValue)
