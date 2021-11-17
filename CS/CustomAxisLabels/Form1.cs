@@ -8,7 +8,7 @@ namespace CustomAxisLabels {
         public Form1() {
             InitializeComponent();
         }
-
+        #region CustomDrawAxisLabel
         private void chartControl1_CustomDrawAxisLabel(object sender, CustomDrawAxisLabelEventArgs e) {
             AxisBase axis = e.Item.Axis;
             if (axis is AxisY || axis is AxisY3D || axis is RadarAxisY) {
@@ -26,6 +26,7 @@ namespace CustomAxisLabels {
                     e.Item.Text = "";
                 }
             }
-        }
+        }        
+        #endregion
     }
 }
