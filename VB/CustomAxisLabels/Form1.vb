@@ -16,12 +16,15 @@ Namespace CustomAxisLabels
             If TypeOf axis Is AxisY OrElse TypeOf axis Is AxisY3D OrElse TypeOf axis Is RadarAxisY Then
                 Dim axisValue As Double = CDbl(e.Item.AxisValue)
                 If axisValue < 0 Then
+                    ' Customize the axis label's color.
                     e.Item.TextColor = Color.Red
                 ElseIf axisValue > 0 Then
+                    ' Customize the axis label's text and color.
                     e.Item.Text = "+" & e.Item.Text
                     e.Item.TextColor = Color.Green
                 ElseIf axisValue = 0 Then
-                    e.Item.Text = "Zero"
+                    ' Hide the axis labels.
+                    e.Item.Text = ""
                 End If
             End If
         End Sub

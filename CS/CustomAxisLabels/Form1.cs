@@ -14,13 +14,16 @@ namespace CustomAxisLabels {
             if (axis is AxisY || axis is AxisY3D || axis is RadarAxisY) {
                 double axisValue = (double)e.Item.AxisValue;
                 if (axisValue < 0)
+                    // Customize the axis label's color.
                     e.Item.TextColor = Color.Red;
                 else if (axisValue > 0) {
+                    // Customize the axis label's text and color.
                     e.Item.Text = "+" + e.Item.Text;
                     e.Item.TextColor = Color.Green;
                 }
                 else if (axisValue == 0) {
-                    e.Item.Text = "Zero";
+                    // Hide the axis labels.
+                    e.Item.Text = "";
                 }
             }
         }
