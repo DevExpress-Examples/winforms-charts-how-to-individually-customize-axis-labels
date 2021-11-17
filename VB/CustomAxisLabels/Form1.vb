@@ -11,6 +11,7 @@ Namespace CustomAxisLabels
             InitializeComponent()
         End Sub
 
+#Region "CustomDrawAxisLabel"
         Private Sub chartControl1_CustomDrawAxisLabel(ByVal sender As Object, ByVal e As CustomDrawAxisLabelEventArgs)
             Dim axis As AxisBase = e.Item.Axis
             If TypeOf axis Is AxisY OrElse TypeOf axis Is AxisY3D OrElse TypeOf axis Is RadarAxisY Then
@@ -28,5 +29,6 @@ Namespace CustomAxisLabels
                 End If
             End If
         End Sub
+#End Region
     End Class
 End Namespace
