@@ -5,10 +5,13 @@
 <!-- default badges end -->
 # How to individually customize axis labels
 
-Apart from the capability to customize the overall appearance of [axis labels](https://docs.devexpress.com/WindowsForms/5804/controls-and-libraries/chart-control/axes/axis-labels), you can obtain **individual** axis label items at runtime. Then, it's possible to apply all the options available for axis labels to them, individually. For example, based on some criteria (for example, an axis value threshold), you can apply different formatting to axis labels.
+Apart from the capability to customize the overall appearance of [axis labels](https://docs.devexpress.com/WindowsForms/5804/controls-and-libraries/chart-control/axes/axis-labels), you can obtain individual axis labels at runtime. Then, it's possible to apply all the options available for axis labels to them, individually. You can apply different formatting to axis labels based on some criteria (for example, an axis value threshold).
+
+The following image shows the resulted Chart:
+
+![](img/customaxislabels_09789.png)
 
 For this, handle the [CustomDrawAxisLabel](https://docs.devexpress.com/WindowsForms/DevExpress.XtraCharts.ChartControl.CustomDrawAxisLabel) event to obtain axis labels.
-
 
 <!-- default file list -->
 ## Files to Look At
